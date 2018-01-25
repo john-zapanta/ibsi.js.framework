@@ -1,0 +1,31 @@
+##const
+	desktop-width=100%
+	desktop-border-color=dimgray
+	desktop-header-height=90px
+	desktop-footer-height=45px
+	navigator-width=150px
+##endconst
+
+.splitter2.main-desktop-split.mobile {
+	position: relative;
+	display: block;
+}
+
+.splitter2.main-desktop-split.mobile > .pane1 {
+	position: absolute;
+    /* width: 243px; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 20000;
+	display: none;
+}
+
+.splitter2.main-desktop-split.mobile > .pane2 {
+	width: 100% !important;
+    height: 100%;
+}
+
+.splitter2.main-desktop-split.mobile > .sizer {
+	display: none;
+}

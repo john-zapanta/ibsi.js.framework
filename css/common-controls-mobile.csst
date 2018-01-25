@@ -1,0 +1,128 @@
+##template
+##endtemplate=engine\toolbar
+
+##template
+	theme=default
+##endtemplate=engine\toolbar-theme
+
+##template 
+	theme=svg
+	button-top-margin=2px
+	border-width=1px
+	border-color=#B0CEE3
+	background-color=whitesmoke
+	button-border-width=0
+	button-border-color-hover=none
+	button-border-style-hover=none
+	button-background-hover=none
+	button-drop-down-border-style-hover=none
+	button-background-active=none
+	button-background-shadow-active=none
+	svg-fill-active=black
+	svg-fill-hover=#FF802B
+	ss-background-color=white
+	ss-border-color=rgba(0,0,0,0.2)
+	ss-border-color-hover=#FF802B
+	ss-box-shadow=rgba(0,0,0,0.3) 1px 0px 2px	
+##endtemplate=engine\toolbar-theme-mobile
+
+##template
+##endtemplate=engine\dialog
+
+##template
+##endtemplate=engine\hints
+
+##template
+##endtemplate=engine\dialog-editor
+
+##includetemplate
+	@name=editor
+##endinclude=engine\editor
+
+##template
+##endtemplate=engine\form-edit
+
+##template
+	theme=default
+##endtemplate=engine\editor-theme
+
+##template
+	theme=table
+##endtemplate=engine\editor-theme
+
+##template
+##endtemplate=engine\datepicker
+
+##template
+##endtemplate=engine\splitter
+
+##template
+##endtemplate=engine\buttons
+
+##template
+##endtemplate=engine\grid-select
+
+##template
+   color-name=green
+   color=#759C00
+   color-lite=#94C700
+   color-dark=#4C6500
+   text-color=black
+   text-color-dis=darkgray
+   text-color-hover=white
+   text-color-active=white
+##endtemplate=engine\buttons-template
+
+##template
+   color-name=red
+   color=red
+   color-lite=IndianRed
+   color-dark=darkred
+   text-color=black
+   text-color-dis=darkgray
+   text-color-hover=white
+   text-color-active=white
+##endtemplate=engine\buttons-template
+
+##template
+   color-name=blue
+   color=#3079ED
+   color-lite=#70A5FC
+   color-dark=#0754D0
+   text-color=whitesmoke
+   text-color-dis=darkgray
+   text-color-hover=white
+   text-color-active=white
+##endtemplate=engine\buttons-template
+
+##template
+   color-name=silver
+   color=#C4C4C7
+   color-lite=whitesmoke
+   color-dark=#4E4E50
+   text-color=dimgray
+   text-color-dis=darkgray
+   text-color-hover=black
+   text-color-active=white
+##endtemplate=engine\buttons-template
+
+##template
+##endtemplate=engine\grid-3
+
+##template
+##endtemplate=engine\grid-theme-3
+
+##template
+##endtemplate=engine\pager-2
+
+##template
+##endtemplate=engine\html-editor
+
+##template
+##endtemplate=engine\upload-files
+
+##template
+##endtemplate=engine\pg-2
+
+##template	
+##endtemplate=engine\pg-theme-2

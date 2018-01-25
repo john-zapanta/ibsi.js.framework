@@ -1,0 +1,181 @@
+/*****************************************************************************************************/
+/* Last modified on */
+/* 07-MAR-2017 */
+/*****************************************************************************************************/
+##const
+	theme=default
+	font-family=Arial
+	font-size=12px
+	row-height=32px
+	command-icon-size=20px
+	command-cell-padding=0px
+	cell-padding=5px 3px 5px 3px
+	data-cell-border=1px #DBDEE1
+	data-cell-border-style=none solid none none
+	header-cell-border=1px #B0CEE3
+	header-cell-border-style=none solid solid none
+	footer-cell-border=1px #B0CEE3
+	footer-cell-border-style=solid solid none none
+##endconst
+
+.grid3[theme="[theme]"] {
+	font-family: [font-family];
+	font-size: [font-size];
+}
+	
+.grid3[theme="[theme]"] .row {
+	height: [row-height];
+}
+
+.grid3[theme="[theme]"] .row.odd {
+	/* background: #F9F9F9; */
+	background: rgba(0,0,0,0.025);
+}
+
+.grid3[theme="[theme]"] .row[hover="1"] {
+	background: #FAF2D1;
+}
+
+.grid3[theme="[theme]"] .row[focused="1"] {
+	background: #FAEDB0;
+}
+
+.grid3[theme="[theme]"] .cell {
+	/* color: #666666 !important; */
+	padding: [cell-padding] !important;
+	white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    box-sizing: border-box !important;
+}
+
+.grid3[theme="[theme]"] .cell-link > a:hover {
+	color: dodgerblue;
+}
+
+.grid3[theme="[theme]"] .command-cell{
+	position: relative;
+	padding: [command-cell-padding] !important;
+	cursor: pointer;
+}
+
+.grid3[theme="[theme]"] .tree-cell {
+	padding: 0px 3px 0px 3px !important;
+}
+
+.grid3[theme="[theme]"] .data-cell {
+	border: [data-cell-border];
+	/* border-width: 1px; */
+    /* border-color: #DBDEE1; */
+    border-style: [data-cell-border-style];
+}
+
+.grid3[theme="[theme]"] .band-cell,
+.grid3[theme="[theme]"] .header-cell {
+	font-weight: bold;
+	background: #D2E3EF;
+    /* border-width: 1px; */
+    /* border-color: #B0CEE3; */
+	border: [header-cell-border];
+    border-style: [header-cell-border-style];
+}
+
+.grid3[theme="[theme]"] .footer-cell {
+	background: #D2E3EF;
+    /* border-width: 1px; */
+    /* border-color: #B0CEE3; */
+	border: [footer-cell-border];
+    border-style: [footer-cell-border-style];
+}
+
+.grid3[theme="[theme]"] .content .row .cell:last-child,
+.grid3[theme="[theme]"] .content-section .row .cell:last-child {
+	border-right: 1px solid silver !important;
+}
+
+.grid3[theme="[theme]"] .left-section .row .cell:last-child,
+.grid3[theme="[theme]"] .fixed-left .row .cell:last-child {
+	border-right: 1px solid dimgray !important;
+	
+}
+
+.grid3[theme="[theme]"] .right-section .row .cell:first-child,
+.grid3[theme="[theme]"] .fixed-right .row .cell:first-child {
+	border-left: 1px solid dimgray !important;
+	
+}
+.grid3[theme="[theme]"] table td[command][ani-scale="1"] {
+	animation-name: ani-scale;
+    animation-duration: 0.5s;
+}
+
+.grid3[theme="[theme]"] table td[command] svg {
+	width: [command-icon-size];
+	height: [command-icon-size];
+}
+
+/* We have to use the > selection to avoid styling down to master/detail table */
+.grid3[theme="[theme]"] div.fixed-left > div.band > table.data-table > tbody > tr.row:last-child > td.cell,
+.grid3[theme="[theme]"] div.fixed-right > div.band > table.data-table > tbody > tr.row:last-child > td.cell,
+.grid3[theme="[theme]"] div.content > div.band > table.data-table > tbody > tr.row:last-child > td.cell {
+	border-bottom: 1px solid silver;
+}
+
+/* HEADER CELL */	
+.grid3[theme="[theme]"] .header-table {	
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	white-space: nowrap;	
+	background: transparent;
+}
+
+	.grid3[theme="[theme]"] .header-table td {
+		padding: 0;
+		border: none;
+		overflow: hidden;
+	}
+
+	.grid3[theme="[theme]"] .header-table .header-label {
+		text-overflow: ellipsis;
+	}
+
+	.grid3[theme="[theme]"] .header-table .header-icon {
+		width: 16px;
+		border: 1px solid transparent;
+		text-align: center;
+	}
+		
+		.grid3[theme="[theme]"] .header-table .header-icon svg {
+			width: 14px;
+			height: 14px;
+			fill: #6DB2E3;
+			cursor: pointer;
+		}
+
+		.grid3[theme="[theme]"] .header-table .header-icon:hover {
+			border-color: white !important;
+			background: #6DB2E3 !important;
+		}
+
+		.grid3[theme="[theme]"] .header-table .header-icon:hover svg {
+			fill: white !important;
+			/* background: #6DB2E3; */
+		}
+
+		.grid3[theme="[theme]"] .header-table .header-icon:active {
+			background: rgba(0,0,0,0.75) !important;
+		}
+
+		.grid3[theme="[theme]"] .header-table .header-icon:active svg {
+			fill: white;
+			/* background: rgba(0,0,0,0.25); */
+		}
+			
+			.grid3[theme="[theme]"] .header-table .header-icon[grid-sec="sort"][sorted="1"] {
+				fill: #6DB2E3;
+				border: 1px solid #6DB2E3;
+				background: rgba(255,255,255,0.5);
+			}
+
+
