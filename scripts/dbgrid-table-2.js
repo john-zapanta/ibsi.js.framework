@@ -113,7 +113,9 @@ jCardViewPainter.prototype.doPaint = function(update) {
 
 jCardViewPainter.prototype.update = function() {
 	// console.log("update")
-	this.parentContainer.html("");
+	if(this.parentContainer) {
+		this.parentContainer.html("");
+	}
 	this.doPaint(true);
 };
 

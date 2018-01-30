@@ -1,8 +1,10 @@
 function CustomEditView(params, init) {
 	this.owner = params.owner;
 	this.dataset = params.dataset;
-	this.postBack = params.postBack;
-
+	// this.postBack = params.postBack;
+	this.postBack = params.url;
+	
+	console.log(params);
 	// this.dataset.Events.OnChanged.add(function(dataset) {
 		// console.log(dataset.editing)
 	// });
