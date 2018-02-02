@@ -4,7 +4,7 @@ function CustomEditView(params, init) {
 	// this.postBack = params.postBack;
 	this.postBack = params.url;
 	
-	console.log(params);
+	// console.log(params);
 	// this.dataset.Events.OnChanged.add(function(dataset) {
 		// console.log(dataset.editing)
 	// });
@@ -82,14 +82,16 @@ function CustomEditView(params, init) {
 					// console.log({a:a, b:b, c:c})
 					// console.log(item);
 					// return;
-					ErrorDialog({
-						// target: dialog.showToolbar ? dialog.toolbar.Element(): dialog.container,
-						target: item.elementContainer,
-						title: "Data integritiy check error",
-						message: msg,
-						snap: "bottom",
-						inset: false
-					});
+					if (status !== 0) {
+						ErrorDialog({
+							// target: dialog.showToolbar ? dialog.toolbar.Element(): dialog.container,
+							target: item.elementContainer,
+							title: "Data integritiy check error",
+							message: msg,
+							snap: "bottom",
+							inset: false
+						});
+					}
 				});
 
 				return;
